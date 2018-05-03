@@ -1,56 +1,56 @@
 {
 	"parameters": {
-		"period": 318,
+		"period": 319,
 		"block_begin": 3904416,
-		"block_end": 5542180,
+		"block_end": 5547597,
 		"b1_dist": false
 	},
 	"accounts": {
-		"valid": 60610,
-		"registered": 60610,
+		"valid": 59880,
+		"registered": 59880,
 		"registered_included_percent": "100%"
 	},
 	"supply": {
-		"total": 1000000000.1602,
-		"expected": 836000000,
-		"included": 189566199.4392,
+		"total": 1000000000.1598,
+		"expected": 838000000,
+		"included": 189767817.3435,
 		"percent_included": "22%",
-		"liquid": 836000000.1613,
-		"margin_of_error": "-0.0000000192942584%"
+		"liquid": 838000000.1565,
+		"margin_of_error": "-0.0000000186754177%"
 	},
 	"meta": {
 		"author": "Anonymous",
-		"timestamp_completed": 1525318064
+		"timestamp_completed": 1525371595
 	},
 	"checksum": {
 		"output": {
-			"snapshot": "abe6b897a980118703ca9ecb9acd6c41b6eb6a0c",
-			"snapshot_unregistered": "498e5a1cc62e449cfcf3dff571b27eb1691136c7",
-			"distribution": "3c71c393eb330ab0c903f8be34ce557bc29943a4"
+			"snapshot": "2fd4f5aed96b385408a4b24fedc24542ac7dece5",
+			"snapshot_unregistered": "9a66e268e1708dbafc12de4587342237fb0e7714",
+			"distribution": "3aeec87cc68cd8ba1d5d45ae0db80ee70bcd39b9"
 		},
 		"db": {
-			"wallets": "c1e73ee18b3d4904eb4b4daf6db9823ae3d2565d",
-			"buys": "779afe685773c87c88fcd223917376b1eaa5459a",
-			"claims": "e282971ff7f58e574d2ad7901ac1d0e188c1ae5e",
-			"registrations": "b75007cbb051fcb57f371168fe04bd5de8360e3b",
-			"transfers": "9d984c86e26073d5e6215afadd195e2525d73e36",
-			"snapshot": "e4494fe1044a0a866ff7aa59c6b6da9c2eda84bf"
+			"wallets": "c5adce5e302cc9eea892ad34eb00f73da4e665ac",
+			"buys": "d9ccfaa6d117f2a54d0c5560b33fd31f65412780",
+			"claims": "7bf9d167c87e6d8a06b3c5f288e58559e3be2d88",
+			"registrations": "2300c4f3fce78b44b82dbd1a6870c17857a3bbdd",
+			"transfers": "6cb4c89cd82b5440ca396120dc1fe3af1632c83c",
+			"snapshot": "f9060ffd1fa8dd2d5a4a331264b46ff9db3a380d"
 		}
 	},
 	"stats": {
 		"contract": {
-			"buys": 217234,
-			"claims": 617117,
-			"registrations": 122893,
-			"transfers": 2926139,
-			"reclaimables": 597
+			"buys": 218010,
+			"claims": 617879,
+			"registrations": 124047,
+			"transfers": 2941783,
+			"reclaimables": 602
 		}
 	},
 	"config": {
-		"period": 318,
+		"period": 319,
 		"author": "Anonymous",
 		"include_b1": false,
-		"snapshot_minimum_balance": 8,
+		"snapshot_minimum_balance": 10,
 		"overwrite_snapshot": true,
 		"recalculate_wallets": false,
 		"skip_web3_sync": false,
@@ -58,7 +58,7 @@
 	},
 	"block_range": {
 		"begin": 3904416,
-		"end": 5542180
+		"end": 5547597
 	},
 	"distribution_status": {
 		"crowdsale_over": false,
