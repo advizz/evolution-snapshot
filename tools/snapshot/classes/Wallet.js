@@ -13,6 +13,7 @@ class Wallet {
     this.registered_fallback  = false
     this.accepted             = false
     this.last_activity_block  = null
+    this.timestamp            = timestamp
 
     this.fallback             = false
 
@@ -40,6 +41,7 @@ class Wallet {
       ,fallback_error:      this.fallback_error
       ,fallback:            this.fallback
       ,valid:               this.accepted
+      ,timestamp:           this.timestamp
     }
   }
 
