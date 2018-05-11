@@ -18,7 +18,7 @@ db.Wallets = mysql.define("wallet", {
   register_error:     Sequelize.STRING(256),
   fallback_error:     Sequelize.STRING(256),
   valid:              Sequelize.BOOLEAN,
-  timestamp:          Sequelize.DATETIME(),
+  timestamp:          Sequelize.DATE(),
 }, {updateOnDuplicate: true, timestamps: false})
 
 db.Transfers = mysql.define('transfer', {
@@ -99,7 +99,7 @@ db.Snapshot = mysql.define('snapshot', {
   user:               Sequelize.STRING(256),
   key:                Sequelize.STRING(256),
   balance:            Sequelize.DECIMAL(15,4),
-  timestamp:          Sequelize.DATETIME()
+  timestamp:          Sequelize.DATE()
 }, {timestamps: false, freezeTableName: true, tableName: 'snapshot'})
 
 db.SnapshotUnregistered = mysql.define('snapshot_unregistered', {
