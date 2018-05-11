@@ -32,6 +32,7 @@ CREATE TABLE `buys` (
   `address` varchar(256) NOT NULL,
   `period` int(11) NOT NULL,
   `eth_amount` decimal(65,0) NOT NULL DEFAULT '0',
+  `timestamp` datetime,
   PRIMARY KEY (`id`),
   KEY `INDEXADDRESS` (`address`),
   KEY `INDEXBN` (`block_number`)
@@ -51,6 +52,7 @@ CREATE TABLE `claims` (
   `address` varchar(256) NOT NULL DEFAULT '',
   `period` int(11) NOT NULL,
   `eos_amount` decimal(65,0) NOT NULL DEFAULT '0',
+  `timestamp` datetime,
   PRIMARY KEY (`id`),
   KEY `INDEXADDRESS` (`address`),
   KEY `INDEXBN` (`block_number`)
@@ -86,6 +88,7 @@ CREATE TABLE `reclaimables` (
   `block_number` varchar(256) NOT NULL,
   `address` varchar(256) NOT NULL DEFAULT '',
   `eos_amount` decimal(65,0) NOT NULL DEFAULT '0',
+  `timestamp` datetime,
   PRIMARY KEY (`id`),
   KEY `INDEXADDRESS` (`address`),
   KEY `INDEXBN` (`block_number`)
@@ -104,6 +107,7 @@ CREATE TABLE `registrations` (
   `block_number` int(255) NOT NULL,
   `address` varchar(256) NOT NULL,
   `eos_key` varchar(256) DEFAULT NULL,
+  `timestamp` datetime,
   PRIMARY KEY (`id`),
   KEY `INDEXADDRESS` (`address`),
   KEY `INDEXBN` (`block_number`)
@@ -169,6 +173,7 @@ CREATE TABLE `transfers` (
   `from` varchar(256) NOT NULL DEFAULT '',
   `to` varchar(256) NOT NULL DEFAULT '',
   `eos_amount` decimal(65,0) NOT NULL DEFAULT '0',
+  `timestamp` datetime,
   PRIMARY KEY (`id`),
   KEY `FROMINDEX` (`from`),
   KEY `TOINDEX` (`to`),

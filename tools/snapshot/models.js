@@ -30,7 +30,8 @@ db.Transfers = mysql.define('transfer', {
   block_number:       Sequelize.STRING(256),
   from:               Sequelize.STRING(256),
   to:                 Sequelize.STRING(256),
-  eos_amount:         Sequelize.DECIMAL(65,0)
+  eos_amount:         Sequelize.DECIMAL(65,0),
+  timestamp:          Sequelize.DATE()
 }, modelConfig)
 
 db.Buys = mysql.define('buy', {
@@ -42,7 +43,8 @@ db.Buys = mysql.define('buy', {
   block_number:       Sequelize.STRING(256),
   address:            Sequelize.STRING(256),
   period:             Sequelize.INTEGER,
-  eth_amount:         Sequelize.DECIMAL(65,0)
+  eth_amount:         Sequelize.DECIMAL(65,0),
+  timestamp:          Sequelize.DATE()
 }, modelConfig)
 
 db.Claims = mysql.define('claim', {
@@ -54,7 +56,8 @@ db.Claims = mysql.define('claim', {
   block_number:       Sequelize.STRING(256),
   address:            Sequelize.STRING(256),
   period:             Sequelize.INTEGER,
-  eos_amount:         Sequelize.DECIMAL(65,0)
+  eos_amount:         Sequelize.DECIMAL(65,0),
+  timestamp:          Sequelize.DATE()
 }, modelConfig)
 
 db.Reclaimables = mysql.define('reclaimable', {
@@ -65,7 +68,8 @@ db.Reclaimables = mysql.define('reclaimable', {
   tx_hash:            Sequelize.STRING(256),
   block_number:       Sequelize.STRING(256),
   address:            Sequelize.STRING(256),
-  eos_amount:         Sequelize.DECIMAL(65,0)
+  eos_amount:         Sequelize.DECIMAL(65,0),
+  timestamp:          Sequelize.DATE()
 }, modelConfig)
 
 db.Registrations = mysql.define('registration', {
@@ -76,7 +80,8 @@ db.Registrations = mysql.define('registration', {
   tx_hash:            Sequelize.STRING(256),
   block_number:       Sequelize.STRING(256),
   address:            Sequelize.STRING(256),
-  eos_key:            Sequelize.STRING(256)
+  eos_key:            Sequelize.STRING(256),
+  timestamp:          Sequelize.DATE()
 }, modelConfig)
 
 // Stores state variables (used infrequently)
